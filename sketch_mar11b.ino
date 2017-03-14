@@ -9,7 +9,7 @@ int RESET              = 7;
 const int button1Pin = 2;  // pushbutton pin
 
 
-// || 4=Blue || 3=Yellow || 2=Red || 1=Green || 6=Purple || 5=Cyan || 0=Off || 
+// || 4=Blue || 3=Yellow || 2=Red || 1=Green || 6=Purple || 5=Cyan || 0=Off || 7=White ||
 
 byte Screen[8][8] = {{4,4,4,4,4,4,4,4},
                      {4,4,4,4,4,4,4,4},
@@ -48,14 +48,15 @@ byte Picture[8][8] = {{1,1,1,1,1,1,1,1},
                       {1,1,1,1,2,1,1,1}};
 
 
-byte Circle0[8][8] = {{2,2,2,2,2,2,2,2},
-                      {2,2,2,2,2,2,2,2},
-                      {2,2,2,2,2,2,2,2},
+
+byte Circle0[8][8] = {{5,2,2,2,2,2,2,5},
+                      {2,5,2,2,2,2,5,2},
+                      {2,2,5,2,2,5,2,2},
                       {2,2,2,2,2,2,2,2},
                       {2,2,2,2,1,2,2,2},
-                      {2,2,2,2,2,2,2,2},
-                      {2,2,2,2,2,2,2,2},
-                      {2,2,2,2,2,2,2,2}};
+                      {2,2,5,2,2,5,2,2},
+                      {2,5,2,2,2,2,5,2},
+                      {5,2,2,2,2,2,2,5}};
 
                       
 byte Circle1[8][8] = {{2,2,2,2,2,2,2,2},
@@ -99,12 +100,12 @@ byte Circle4[8][8] = {{2,2,2,2,1,1,1,1},
 
 
 byte Circle5[8][8] = {{2,2,2,2,1,1,1,1},
-                      {2,2,2,1,2,2,2,1},
-                      {2,2,1,2,2,2,2,1},
-                      {2,1,2,2,2,2,2,1},
-                      {1,2,2,2,2,2,2,1},
-                      {1,2,2,2,2,2,2,1},
-                      {1,2,2,2,2,2,2,1},
+                      {2,2,2,1,5,5,5,1},
+                      {2,2,1,5,5,5,5,1},
+                      {2,1,5,5,5,5,5,1},
+                      {1,5,5,5,5,5,5,1},
+                      {1,5,5,5,5,5,5,1},
+                      {1,5,5,5,5,5,5,1},
                       {1,1,1,1,1,1,1,1}};
                       
 
@@ -257,7 +258,7 @@ void ShowCircle0(){
   {
     for(rowIndex = 0; rowIndex < 8; rowIndex++)
     {
-      Screen[lineIndex][rowIndex] = Circle1[lineIndex][rowIndex];
+      Screen[lineIndex][rowIndex] = Circle0[lineIndex][rowIndex];
     }
   }
 }
@@ -325,7 +326,7 @@ void ShowCircle5(){
   {
     for(rowIndex = 0; rowIndex < 8; rowIndex++)
     {
-      Screen[lineIndex][rowIndex] = Circle1[lineIndex][rowIndex];
+      Screen[lineIndex][rowIndex] = Circle5[lineIndex][rowIndex];
     }
   }
 }
@@ -504,7 +505,7 @@ void BlinkingState()
 void AnimateCircle()
 {
   State++;
-  if (State == 5)
+  if (State == 7)
   {
     State = 0;
   }
@@ -540,13 +541,6 @@ void AnimateCircle()
 
   }
 }
-
-
-
-
-
-
-
 
 
 void setup() 
