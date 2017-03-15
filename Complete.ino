@@ -7,14 +7,14 @@ int RESET              = 7;
 const int button1Pin = 2;  // pushbutton pin
 // || 4=Blue || 3=Yellow || 2=Red || 1=Green || 6=Purple || 5=Cyan || 0=Off || 7=White ||
 
-byte Screen[8][8] = {{2,2,2,1,2,2,2,1},
-                     {1,2,1,1,2,1,1,1},
-                     {2,2,1,1,2,2,2,1},
-                     {1,1,1,1,1,1,1,1},
-                     {2,1,2,1,2,2,2,1},
-                     {2,2,2,1,2,1,1,1},
-                     {2,1,2,1,2,2,2,1},
-                     {1,1,1,1,1,1,1,1}};
+byte Screen[8][8] = {{0,0,0,0,0,0,0,0},
+                     {0,0,0,0,0,0,0,0},
+                     {0,0,0,0,0,0,0,0},
+                     {0,0,0,0,0,0,0,0},
+                     {0,0,0,0,0,0,0,0},
+                     {0,0,0,0,0,0,0,0},
+                     {0,0,0,0,0,0,0,0},
+                     {0,0,0,0,0,0,0,0}};
 
 
 byte Heart0[8][8] = {{1,2,2,1,1,2,2,1},
@@ -445,6 +445,218 @@ byte Circle4[8][8] = {{5,5,5,1,1,5,5,5},
                       {5,5,1,5,5,1,5,5},
                       {5,5,5,1,1,5,5,5}};
                       
+byte Square0[8][8] = {{4,7,7,7,7,7,7,4},
+                      {7,7,7,7,7,7,7,7},
+                      {7,7,5,5,5,5,7,7},
+                      {7,7,5,5,5,5,7,7},
+                      {7,7,5,5,5,5,7,7},
+                      {7,7,5,5,5,5,7,7},
+                      {7,7,7,7,7,7,7,7},
+                      {4,7,7,7,7,7,7,4}};
+                      
+byte Square1[8][8] = {{4,7,7,7,7,7,7,4},
+                      {7,7,7,7,7,7,7,7},
+                      {7,7,7,7,7,7,7,7},
+                      {7,7,7,7,7,7,7,7},
+                      {5,5,5,5,7,7,7,7},
+                      {5,5,5,5,7,7,7,7},
+                      {5,5,5,5,7,7,7,7},
+                      {5,5,5,5,7,7,7,4}};
+
+byte Square2[8][8] = {{4,7,7,7,7,7,7,4},
+                      {7,7,7,7,7,7,7,7},
+                      {7,7,7,7,7,7,7,7},
+                      {7,7,7,7,7,7,7,7},
+                      {7,7,7,7,5,5,5,5},
+                      {7,7,7,7,5,5,5,5},
+                      {7,7,7,7,5,5,5,5},
+                      {4,7,7,7,5,5,5,5}};
+
+byte Square3[8][8] = {{4,7,7,7,5,5,5,5},
+                      {7,7,7,7,5,5,5,5},
+                      {7,7,7,7,5,5,5,5},
+                      {7,7,7,7,5,5,5,5},
+                      {7,7,7,7,7,7,7,7},
+                      {7,7,7,7,7,7,7,7},
+                      {7,7,7,7,7,7,7,7},
+                      {4,7,7,7,7,7,7,4}};
+
+byte Square4[8][8] = {{5,5,5,5,7,7,7,4},
+                      {5,5,5,5,7,7,7,7},
+                      {5,5,5,5,7,7,7,7},
+                      {5,5,5,5,7,7,7,7},
+                      {7,7,7,7,7,7,7,7},
+                      {7,7,7,7,7,7,7,7},
+                      {7,7,7,7,7,7,7,7},
+                      {4,7,7,7,7,7,7,4}};
+
+byte Triforce0[8][8] = {{3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,3,3,2,3,3,3},
+                        {3,3,3,2,6,2,3,3},
+                        {3,3,2,6,6,6,2,3},
+                        {3,2,6,6,6,6,6,2},
+                        {2,6,6,6,6,6,6,6}};
+                      
+byte Triforce1[8][8] = {{3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,3,2,3,3,3,3},
+                        {3,3,2,6,2,3,3,3},
+                        {3,2,6,6,6,2,3,3},
+                        {2,6,6,6,6,6,2,3},
+                        {6,6,6,6,6,6,6,2}};
+
+
+byte Triforce2[8][8] = {{3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,2,3,3,3,3,3},
+                        {3,2,6,2,3,3,3,3},
+                        {2,6,6,6,2,3,3,3},
+                        {6,6,6,6,6,2,3,2},
+                        {6,6,6,6,6,6,2,6}};
+
+
+byte Triforce3[8][8] = {{3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,2,3,3,3,3,3,3},
+                        {2,6,2,3,3,3,3,3},
+                        {6,6,6,2,3,3,3,2},
+                        {6,6,6,6,2,3,2,6},
+                        {6,6,6,6,6,2,6,6}};
+
+
+byte Triforce4[8][8] = {{3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {2,3,3,3,3,3,3,3},
+                        {6,2,3,3,3,3,3,2},
+                        {6,6,2,3,3,3,2,6},
+                        {6,6,6,2,3,2,6,6},
+                        {6,6,6,6,2,6,6,6}};
+
+
+byte Triforce5[8][8] = {{3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,2},
+                        {2,3,3,3,3,3,2,6},
+                        {6,2,3,3,3,2,6,6},
+                        {6,6,2,3,2,6,6,6},
+                        {6,6,6,2,6,6,6,6}};
+                      
+byte Triforce6[8][8] = {{3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,2,3},
+                        {3,3,3,3,3,2,6,2},
+                        {2,3,3,3,2,6,6,6},
+                        {6,2,3,2,6,6,6,6},
+                        {6,6,2,6,6,6,6,6}};
+
+byte Triforce7[8][8] = {{3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,2,3,3},
+                        {3,3,3,3,2,6,2,3},
+                        {3,3,3,2,6,6,6,2},
+                        {2,3,2,6,6,6,6,6},
+                        {6,2,6,6,6,6,6,6}};
+
+byte Triforce8[8][8] = {{3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,3,3,3,3,3,3},
+                        {3,3,3,3,2,3,3,3},
+                        {3,3,3,2,6,2,3,3},
+                        {3,3,2,6,6,6,2,3},
+                        {3,2,6,6,6,6,6,2},
+                        {2,6,6,6,6,6,6,6}};
+
+byte Dead0[8][8] = {
+  {7, 1, 1, 1, 7, 7, 7, 7},
+  {7, 1, 1, 1, 7, 7, 7, 7},
+  {7, 7, 1, 7, 7, 7, 7, 5},
+  {7, 1, 1, 1, 7, 7, 7, 7},
+  {1, 7, 1, 7, 1, 7, 7, 7},
+  {7, 7, 1, 7, 7, 7, 7, 7},
+  {7, 1, 7, 1, 7, 7, 7, 7},
+  {7, 1, 7, 1, 7, 7, 7, 7}
+};
+
+
+byte Dead1[8][8] = {
+  {7, 1, 1, 1, 7, 7, 7, 7},
+  {7, 1, 1, 1, 7, 7, 7, 7},
+  {7, 7, 1, 7, 7, 7, 5, 5},
+  {7, 1, 1, 1, 7, 7, 7, 7},
+  {1, 7, 1, 7, 1, 7, 7, 7},
+  {7, 7, 1, 7, 7, 7, 7, 7},
+  {7, 1, 7, 1, 7, 7, 7, 7},
+  {7, 1, 7, 1, 7, 7, 7, 7}
+};
+
+
+byte Dead2[8][8] = {
+  {7, 1, 1, 1, 7, 7, 7, 7},
+  {7, 1, 1, 1, 7, 7, 7, 7},
+  {7, 7, 1, 7, 7, 5, 5, 5},
+  {7, 1, 1, 1, 7, 7, 7, 7},
+  {1, 7, 1, 7, 1, 7, 7, 7},
+  {7, 7, 1, 7, 7, 7, 7, 7},
+  {7, 1, 7, 1, 7, 7, 7, 7},
+  {7, 1, 7, 1, 7, 7, 7, 7}
+};
+
+
+byte Dead3[8][8] = {
+  {7, 1, 1, 1, 7, 7, 7, 7},
+  {7, 1, 1, 1, 7, 7, 7, 7},
+  {7, 7, 1, 7, 5, 5, 5, 7},
+  {7, 1, 1, 1, 7, 7, 7, 7},
+  {1, 7, 1, 7, 1, 7, 7, 7},
+  {7, 7, 1, 7, 7, 7, 7, 7},
+  {7, 1, 7, 1, 7, 7, 7, 7},
+  {7, 1, 7, 1, 7, 7, 7, 7}
+};
+
+
+byte Dead4[8][8] = {
+  {7, 7, 7, 7, 7, 7, 7, 7},
+  {7, 7, 7, 7, 1, 1, 7, 7},
+  {7, 7, 1, 7, 1, 1, 1, 7},
+  {7, 1, 1, 1, 7, 1, 1, 7},
+  {1, 7, 1, 7, 1, 7, 7, 7},
+  {7, 7, 1, 7, 7, 7, 7, 7},
+  {7, 1, 7, 1, 7, 7, 7, 7},
+  {7, 1, 7, 1, 7, 7, 7, 7}
+};
+
+
+byte Dead5[8][8] = {
+  {7, 7, 7, 7, 7, 7, 7, 7},
+  {7, 7, 7, 7, 7, 7, 7, 7},
+  {7, 7, 1, 7, 7, 7, 7, 7},
+  {7, 1, 1, 1, 7, 7, 7, 7},
+  {1, 7, 1, 7, 1, 7, 7, 7},
+  {7, 7, 1, 7, 7, 7, 1, 1},
+  {7, 1, 7, 1, 7, 7, 1, 1},
+  {7, 1, 7, 1, 7, 7, 1, 1}
+};
+
+byte Dead6[8][8] = {
+  {2, 7, 2, 7, 2, 7, 2, 7},
+  {7, 2, 2, 2, 7, 7, 7, 7},
+  {7, 7, 1, 7, 7, 2, 7, 2},
+  {7, 1, 1, 1, 7, 7, 7, 7},
+  {1, 7, 1, 7, 1, 7, 2, 7},
+  {7, 7, 1, 7, 2, 7, 7, 7},
+  {7, 1, 7, 1, 7, 1, 1, 1},
+  {7, 1, 7, 1, 2, 1, 1, 1}
+};
+
 unsigned long LastStateChangeTime;
 unsigned long StateWaitTime;
 int State;
@@ -1073,6 +1285,288 @@ void ShowCircle4(){
   }
 }
 
+void ShowSquare0(){  
+  byte lineIndex;
+  byte rowIndex;
+
+  for(lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for(rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Square0[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowSquare1(){  
+  byte lineIndex;
+  byte rowIndex;
+
+  for(lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for(rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Square1[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowSquare2(){
+    
+  byte lineIndex;
+  byte rowIndex;
+
+  for(lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for(rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Square2[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowSquare3(){
+    
+  byte lineIndex;
+  byte rowIndex;
+
+  for(lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for(rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Square3[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowSquare4(){
+    
+  byte lineIndex;
+  byte rowIndex;
+
+  for(lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for(rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Square4[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowTriforce0(){  
+  byte lineIndex;
+  byte rowIndex;
+
+  for(lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for(rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Triforce0[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowTriforce1(){  
+  byte lineIndex;
+  byte rowIndex;
+
+  for(lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for(rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Triforce1[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowTriforce2(){
+    
+  byte lineIndex;
+  byte rowIndex;
+
+  for(lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for(rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Triforce2[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowTriforce3(){
+    
+  byte lineIndex;
+  byte rowIndex;
+
+  for(lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for(rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Triforce3[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowTriforce4(){
+    
+  byte lineIndex;
+  byte rowIndex;
+
+  for(lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for(rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Triforce4[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowTriforce5(){  
+  byte lineIndex;
+  byte rowIndex;
+
+  for(lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for(rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Triforce5[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowTriforce6(){  
+  byte lineIndex;
+  byte rowIndex;
+
+  for(lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for(rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Triforce6[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowTriforce7(){  
+  byte lineIndex;
+  byte rowIndex;
+
+  for(lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for(rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Triforce7[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowTriforce8(){  
+  byte lineIndex;
+  byte rowIndex;
+
+  for(lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for(rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Triforce8[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowDead0() {
+  byte lineIndex;
+  byte rowIndex;
+
+  for (lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for (rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Dead0[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowDead1() {
+  byte lineIndex;
+  byte rowIndex;
+
+  for (lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for (rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Dead1[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowDead2() {
+
+  byte lineIndex;
+  byte rowIndex;
+
+  for (lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for (rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Dead2[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowDead3() {
+
+  byte lineIndex;
+  byte rowIndex;
+
+  for (lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for (rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Dead3[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowDead4() {
+
+  byte lineIndex;
+  byte rowIndex;
+
+  for (lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for (rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Dead4[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowDead5() {
+  byte lineIndex;
+  byte rowIndex;
+
+  for (lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for (rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Dead5[lineIndex][rowIndex];
+    }
+  }
+}
+
+void ShowDead6() {
+  byte lineIndex;
+  byte rowIndex;
+
+  for (lineIndex = 0; lineIndex < 8; lineIndex++)
+  {
+    for (rowIndex = 0; rowIndex < 8; rowIndex++)
+    {
+      Screen[lineIndex][rowIndex] = Dead6[lineIndex][rowIndex];
+    }
+  }
+}
+
 //Animates the Heart Animation
 void AnimateHeart()
 {
@@ -1295,6 +1789,140 @@ void AnimateCircle()
   }
 }
 
+//Animates the Square Animation
+void AnimateSquare()
+{
+  State++;
+  if (State == 6)
+  {
+    State = 1;
+  }
+
+  LastStateChangeTime = millis();
+  switch (State)
+  {
+
+     case 1:
+       ShowSquare0();
+       StateWaitTime = 200;
+       break;
+     case 2:
+       ShowSquare1();
+       StateWaitTime = 200;
+       break;
+     case 3:
+       ShowSquare2();
+       StateWaitTime = 200;
+       break;
+     case 4:
+       ShowSquare3();
+       StateWaitTime = 200;
+       break;   
+     case 5:
+       ShowSquare4();
+       StateWaitTime = 200;
+       break;   
+
+  }
+}
+
+//Animates the Triforce Animation
+void AnimateTriforce()
+{
+  State++;
+  if (State == 8)
+  {
+    State = 1;
+  }
+
+  LastStateChangeTime = millis();
+  switch (State)
+  {
+
+     case 1:
+       ShowTriforce0();
+       StateWaitTime = 300;
+       break;
+     case 2:
+       ShowTriforce1();
+       StateWaitTime = 300;
+       break;
+     case 3:
+       ShowTriforce2();
+       StateWaitTime = 300;
+       break;
+     case 4:
+       ShowTriforce3();
+       StateWaitTime = 300;
+       break;   
+     case 5:
+       ShowTriforce4();
+       StateWaitTime = 300;
+       break;   
+     case 6:
+       ShowTriforce5();
+       StateWaitTime = 300;
+       break;  
+       case 7:
+       ShowTriforce6();
+       StateWaitTime = 300;
+       break;  
+       case 8:
+       ShowTriforce7();
+       StateWaitTime = 300;
+       break;  
+       case 9:
+       ShowTriforce8();
+       StateWaitTime = 300;
+       break;   
+
+  }
+}
+
+//Animates the Dead Animation
+void AnimateDead()
+{
+  State++;
+  if (State == 8)
+  {
+    State = 1;
+  }
+
+  LastStateChangeTime = millis();
+  switch (State)
+  {
+
+    case 1:
+      ShowDead0();
+      StateWaitTime = 300;
+      break;
+    case 2:
+      ShowDead1();
+      StateWaitTime = 300;
+      break;
+    case 3:
+      ShowDead2();
+      StateWaitTime = 300;
+      break;
+    case 4:
+      ShowDead3();
+      StateWaitTime = 300;
+      break;
+    case 5:
+      ShowDead4();
+      StateWaitTime = 300;
+      break;
+    case 6:
+      ShowDead5();
+      StateWaitTime = 500;
+      break;
+    case 7:
+      ShowDead6();
+      StateWaitTime = 800;
+      break;
+  }
+}
+
 void setup() 
 {
 
@@ -1322,8 +1950,6 @@ void setup()
 //  Serial.println();
 //  ShowPicture();
  // }
-  
-
 
 void loop() {
   
@@ -1336,12 +1962,15 @@ void loop() {
  //   UpdateState();
  //BlinkingState();
  //  ShowPicture();
+ // ShowHeart2();
 
 // AnimateHeart();
 // AnimateSineAmp();
 // AnimatePhase();
-// ShowHeart2();
-   AnimateCircle();
+// AnimateCircle();
+// AnimateSquare();
+// AnimateTriforce();
+ AnimateDead();
   }  
   
   sendDataFromArray();
